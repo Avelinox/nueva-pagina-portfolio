@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monda', serif;
+    
+}
+
+/* navbar */
+
+.logo{
+    display: flex;
+    margin: 8px;
+    margin-right: 390px;
+    width: 8%;
+    height: auto;
+}
+
+.logo:hover{
+    -webkit-transform: scale(1.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+}
+
+.navbar ul li{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5sec ease;
+}
+
+.navbar ul li a:hover{
+    background-color: rgb(223, 189, 0);
+    color: black;
+    box-shadow: 0 0 10px white;
+    border-radius: 8%;
+}
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px #faf604, 0 0 8px #d5e400;
+    z-index: -1;
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: px;
+    background: url('fondo\ programing13.jpg') no-repeat center center/cover;
+    height: 550px;
+    width: 100%;
+    z-index: -1;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top: 30%;
+    right: 20%;
+    z-index: -1;
+
+}
+
+.headings{
+    font-size: 3rem;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.911);
+    color: rgb(238, 238, 238);
+    outline: none;
+    transition: .6s ease;
+    font-size: 15px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px rgb(237, 253, 5);
+}
+
+/*About Section*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/*Porfolio*/
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+}
+
+/* Services Section */
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+
+}
+
