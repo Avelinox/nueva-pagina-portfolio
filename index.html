@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Monda:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="tablet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Monda:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfólio AB</title>
 </head>
 
@@ -15,11 +15,11 @@
     <nav class="navbar">
         <img src="logoabre.png" alt="logo ab" class="logo">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
 
@@ -33,7 +33,7 @@
     <section id="about">
         <h1 class="headings">About Me</h1>
         <div id="pic">
-            <img src="img/imagen ave ppal1.png" alt="Imagen Avelino">
+            <img src="ave13.png" alt="Imagen Avelino">
             <div id="intro">
                 <h2>Avelino Bracho</h2>
                 <p>
@@ -87,13 +87,168 @@
         <h1 class="headings">Services</h1>
         <div class="row">
             <div class="box">
+                <img src="img/GitHub-logo.png" alt="">
                 <h1 class="headings">Front End</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ullam quas laudantium sequi, dolorem, exercitationem a alias neque nisi minus culpa? Repudiandae dolore consequatur, ipsum ullam provident illum quae error? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque asperiores laudantium, fugit, enim odit, nisi voluptas voluptatum vero deserunt magnam ipsam est nam pariatur minus. Quibusdam quos corporis necessitatibus qui. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ullam quas laudantium sequi, dolorem, exercitationem a alias neque nisi minus culpa? Repudiandae dolore consequatur, ipsum ullam provident illum quae error? Lorem, ipsum dolor sit amet consectetur adipisicing elit.  
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/html5.png" alt="">
+                <h1 class="headings">JavaScript</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ullam quas laudantium sequi, dolorem, exercitationem a alias neque nisi minus culpa? Repudiandae dolore consequatur, ipsum ullam provident illum quae error? Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/logo js.png" alt="">
+                <h1 class="headings">React</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque ullam quas laudantium sequi, dolorem, exercitationem a alias neque nisi minus culpa? Repudiandae dolore consequatur, ipsum ullam provident illum quae error? Lorem, ipsum dolor sit amet consectetur adipisicing elit.  
                 </p>
             </div>
         </div>
     </section>
-</body>
 
+    <section class="container-formulario">
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error"> Máximo de 16 dígitos e só pode conter números, letras e sublinhado.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nome</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Máximo de 16 dígitos e só pode conter números, letras e sublinhado.</p>
+			</div>
+
+			<!-- Grupo: Senha -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Senha</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">A senha deve ter de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repita a Senha</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas as senhas devem ser iguais.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Email</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">O Email só pode conter letras, números, pontos, hifens e sublinhado.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Telefone</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="11991234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">O telefone só pode conter números e o máximo é 14 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Termos e Condições -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Eu aceito os termos e condições
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, preencha o formulário corretamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulário enviado com sucesso!</p>
+			</div>
+		</form>
+	</section>
+
+
+
+
+    <!--
+    <section class="registry-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>New User</h2>
+            </div>
+            <form id="user-form" class="form">
+                <div class="form-box">
+                    <label for="nickName">Name</label>
+                    <input type="text" name="nickName" id="nickName" placeholder="John Doe">
+                    <small class="error-text">Introduce un nombre</small>
+                </div>
+                <div class="form-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="info@gmail.com">
+                    <small class="error-text">Introduce un email valido</small>
+                </div>
+                
+                <button type="submit" id="submit-btn" disabled>Enviar</button>
+            </form>
+        </div>
+    </section>
+-->
+    
+    <!--Slider
+
+        <div class="container">
+  
+            <ul class="slider">
+              <li id="slide1">
+                <img src="img/laguna.JPG"/>
+              </li>
+              <li id="slide2">
+                <img src="img/flia1.jpg"/>
+              </li>
+              <li id="slide3">
+                <img src="img/imagen toti.jfif"/>
+              </li>
+            </ul>
+            
+            <ul class="menu">
+              <li>
+                <a href="#slide1">1</a>
+              </li>
+              <li>
+                <a href="#slide2">2</a>
+              </li>
+               <li>
+                <a href="#slide3">3</a>
+              </li>
+            </ul>
+    </div>
+-->
+<script src="index.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+</body>
 </html>
