@@ -6,7 +6,8 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+	mensagem: /^[0-9a-zA-ZÀ-ÿ\s]{1,40}$/,
 }
 
 const campos = {
@@ -14,7 +15,8 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+	mensagem: false
 }
 
 const validarFormulario = (e) => {
@@ -37,6 +39,9 @@ const validarFormulario = (e) => {
 		break;
 		case "telefono":
 			validarCampo(expresiones.telefono, e.target, 'telefono');
+		break;
+		case "mensagem":
+			validarCampo(expresiones.mensagem, e.target, 'mensagem');
 		break;
 	}
 }
