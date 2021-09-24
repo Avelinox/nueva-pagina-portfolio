@@ -18,7 +18,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About me</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#abilities">Abilities</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -82,8 +82,8 @@
         </div>
     </section>
 
-    <section id="habilidades">
-        <h1 class="headings">Habilidades</h1>
+    <section id="abilities">
+        <h1 class="headings">Abilities</h1>
         <div class="gallery">
             <img src="img/negocia.jpg" alt="" class="img1">
             <img src="img/coaching.jpg" alt="" class="img1">
@@ -146,75 +146,75 @@
         <h1 class="headings">Contact Me</h1>
         <div class="content___form">
             <form action="" class="formulario" id="formulario">
-           
 
-            <!-- Grupo: Nombre -->
-            <div class="formulario__grupo" id="grupo__nombre">
-                <label for="nombre" class="formulario__label">Nome</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label">Nome</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Máximo de 16 dígitos e só pode conter números, letras e
+                        sublinhado.
+                    </p>
                 </div>
-                <p class="formulario__input-error">Máximo de 16 dígitos e só pode conter números, letras e sublinhado.
-                </p>
-            </div>
 
-            <div class="formulario__grupo" id="grupo__correo">
-                <label for="correo" class="formulario__label">Email</label>
-                <div class="formulario__grupo-input">
-                    <input type="email" class="formulario__input" name="correo" id="correo"
-                        placeholder="correo@correo.com" />
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Email</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="correo@correo.com" />
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">O Email só pode conter letras, números, pontos, hifens e
+                        sublinhado.
+                    </p>
                 </div>
-                <p class="formulario__input-error">O Email só pode conter letras, números, pontos, hifens e sublinhado.
-                </p>
-            </div>
 
-            
-            <div class="formulario__grupo" id="grupo__mensagem">
-                <label for="mensagem" class="formulario__label">Mensagem</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="mensagem" id="mensagem" placeholder="Comentario..." />
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+
+                <div class="formulario__grupo" id="grupo__mensagem">
+                    <label for="mensagem" class="formulario__label">Mensagem</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="mensagem" id="mensagem"
+                            placeholder="Comentario..." />
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Escriba mensaje.
+                    </p>
                 </div>
-                <p class="formulario__input-error">Escriba mensaje.
-                </p>
-            </div>
 
-            <!-- Grupo: Teléfono -->
-            <div class="formulario__grupo" id="grupo__telefono">
-                <label for="telefono" class="formulario__label">Telefone</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono"
-                        placeholder="11991234567" />
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label">Telefone</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="11991234567" />
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">O telefone só pode conter números e o máximo é 14 dígitos.</p>
                 </div>
-                <p class="formulario__input-error">O telefone só pode conter números e o máximo é 14 dígitos.</p>
-            </div>
 
-            <!-- Grupo: Termos e Condições -->
-            <div class="formulario__grupo" id="grupo__terminos">
-                <label class="formulario__label">
-                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" />
-                    Eu aceito os termos e condições
-                </label>
-            </div>
+                <div class="formulario__grupo" id="grupo__terminos">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos" />
+                        Eu aceito os termos e condições
+                    </label>
+                </div>
 
-            <div class="formulario__mensaje" id="formulario__mensaje">
-                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, preencha o formulário
-                    corretamente. </p>
-            </div>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor, preencha o formulário
+                        corretamente. </p>
+                </div>
 
-            <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulário enviado com sucesso!</p>
-            </div>
-        </form>
-        
-    </div>
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"><b>Formulário enviado com sucesso!</b>
+                    </p>
+                </div>
+            </form>
+
+        </div>
         <div class="link">
             <a href="https://github.com/Avelinox" target="_blank">
-                <img src="img/GitHub-logo-removebg-preview.png" alt="" class="link__icon" />
+                <img src="img/github14.png" alt="" class="link__icon" />
             </a>
 
             <a href="https://www.facebook.com/profile.php?id=1075244572" target="_blank">
@@ -227,65 +227,8 @@
         </div>
     </section>
 
-
-
-
-    <!--
-    <section class="registry-section">
-        <div class="form-container">
-            <div class="form-header">
-                <h2>New User</h2>
-            </div>
-            <form id="user-form" class="form">
-                <div class="form-box">
-                    <label for="nickName">Name</label>
-                    <input type="text" name="nickName" id="nickName" placeholder="John Doe">
-                    <small class="error-text">Introduce un nombre</small>
-                </div>
-                <div class="form-box">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="info@gmail.com">
-                    <small class="error-text">Introduce un email valido</small>
-                </div>
-                
-                <button type="submit" id="submit-btn" disabled>Enviar</button>
-            </form>
-        </div>
-    </section>
--->
-
-    <!--Slider
-
-        <div class="container">
-  
-            <ul class="slider">
-              <li id="slide1">
-                <img src="img/laguna.JPG"/>
-              </li>
-              <li id="slide2">
-                <img src="img/flia1.jpg"/>
-              </li>
-              <li id="slide3">
-                <img src="img/imagen toti.jfif"/>
-              </li>
-            </ul>
-            
-            <ul class="menu">
-              <li>
-                <a href="#slide1">1</a>
-              </li>
-              <li>
-                <a href="#slide2">2</a>
-              </li>
-               <li>
-                <a href="#slide3">3</a>
-              </li>
-            </ul>
-    </div>
--->
     <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
